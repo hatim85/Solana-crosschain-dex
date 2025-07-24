@@ -3,12 +3,12 @@ use anchor_spl::{
     associated_token::AssociatedToken,
     token::{self, Mint, Token, TokenAccount, Transfer},
 };
-use whirlpool_cpi::program::Whirlpool as WhirlpoolProgram;
 use whirlpool_cpi::cpi::accounts::Swap as WhirlpoolSwap;
 use whirlpool_cpi::state::Whirlpool;
 
 declare_id!("8PQoXSe6fJoai2GzkndYT6eGvPBbYCGsGjndx91oXGWq");
 
+#[cfg_attr(not(feature = "idl-build"), allow(unexpected_cfgs))]
 #[program]
 pub mod cross_chain_dex {
     use super::*;

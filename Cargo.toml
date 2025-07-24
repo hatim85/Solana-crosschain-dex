@@ -1,6 +1,6 @@
 [workspace]
 members = [
-    "programs/*"
+    "programs/cross-chain-dex"
 ]
 resolver = "2"
 
