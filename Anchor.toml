@@ -7,7 +7,7 @@ resolution = true
 skip-lint = false
 
 [programs.localnet]
-cross_chain_dex = "8PQoXSe6fJoai2GzkndYT6eGvPBbYCGsGjndx91oXGWq"
+cross_chain_dex = "GhksWFc9wWmdcrVwViGpCMzkmMAJJFJyktkLPtZev8AF"
 
 [registry]
 url = "https://api.apr.dev"

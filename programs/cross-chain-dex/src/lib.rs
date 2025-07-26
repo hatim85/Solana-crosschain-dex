@@ -6,7 +6,8 @@ use anchor_spl::{
 use whirlpool_cpi::cpi::accounts::Swap as WhirlpoolSwap;
 use whirlpool_cpi::state::Whirlpool;
 
-declare_id!("8PQoXSe6fJoai2GzkndYT6eGvPBbYCGsGjndx91oXGWq");
+// declare_id!("8PQoXSe6fJoai2GzkndYT6eGvPBbYCGsGjndx91oXGWq");
+declare_id!("GhksWFc9wWmdcrVwViGpCMzkmMAJJFJyktkLPtZev8AF");
 
 #[cfg_attr(not(feature = "idl-build"), allow(unexpected_cfgs))]
 #[program]

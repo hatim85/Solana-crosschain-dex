@@ -8,3 +8,40 @@ test-ledger
 
 
 whirlpool-cpi = { path = "/Users/hatim/Projects/Solana/dependencies/whirlpool-cpi" }
+
+hatim@Hatims-MacBook-Air cross-chain-dex % anchor deploy --provider.cluster devnet
+Deploying cluster: https://api.devnet.solana.com
+Upgrade authority: /Users/hatim/.config/solana/id.json
+Deploying program "cross_chain_dex"...
+Program path: /Users/hatim/Projects/Solana/Solana-crosschain-dex/cross-chain-dex/target/deploy/cross_chain_dex.so...
+Program Id: GhksWFc9wWmdcrVwViGpCMzkmMAJJFJyktkLPtZev8AF
+
+Signature: 4TFW3u3YYwJNi3NgPqHaarHYZREJUFsSaU86e5FMSVqR3Fj7hDn9wgdokuEYg3H8Y7ryEkTgvXgMSeBYXarLLUdH
+
+Deploy success
+hatim@Hatims-MacBook-Air cross-chain-dex % 
+
+RUSTUP_TOOLCHAIN=nightly-2025-04-01 anchor build
+
+
+hatim@Hatims-MacBook-Air cross-chain-dex % spl-token create-token --url https://api.devnet.solana.com
+Creating token 97VP95WhqyA13rbT2v6QA3gDZPpFLtLYrhTQLz4V1D4Y under program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+
+Address:  97VP95WhqyA13rbT2v6QA3gDZPpFLtLYrhTQLz4V1D4Y
+Decimals:  9
+
+Signature: 3TZTqYGAmZt15EgRkL4myL9Kj3jKw38xvNrmqz7VrDt6HCbwLnNKJbG1N3QeGSGi4e6KDLtBWF8Q5NSdcBe3UTyq
+
+hatim@Hatims-MacBook-Air cross-chain-dex % spl-token create-account 97VP95WhqyA13rbT2v6QA3gDZPpFLtLYrhTQLz4V1D4Y --url https://api.devnet.solana.com
+Creating account ED4ahP1qt4m156UEF4DyfKbTMHZ9gX49ipR1ZaZCpbwN
+
+Signature: 36fDCWncB1btvLEJCW3bqbPpkkwEf467J5ietTNPz6aGsLZk5fnp2KrYq4b1qev2vdzRK2uRZid6WTkgmUcdG4LQ
+
+hatim@Hatims-MacBook-Air cross-chain-dex % spl-token mint 97VP95WhqyA13rbT2v6QA3gDZPpFLtLYrhTQLz4V1D4Y 1000 ED4ahP1qt4m156UEF4DyfKbTMHZ9gX49ipR1ZaZCpbwN --url https://api.devnet.solana.com
+Minting 1000 tokens
+  Token: 97VP95WhqyA13rbT2v6QA3gDZPpFLtLYrhTQLz4V1D4Y
+  Recipient: ED4ahP1qt4m156UEF4DyfKbTMHZ9gX49ipR1ZaZCpbwN
+
+Signature: vAZAyAUtHEe95K7TEfM5MP3QBsAdfbSrWH33z5QN7MmZdCty5oA7rNMtGV9HELWymzzapRmfnpprZUb8rWRkRGb
+
+hatim@Hatims-MacBook-Air cross-chain-dex % 
